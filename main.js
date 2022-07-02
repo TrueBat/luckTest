@@ -1,3 +1,5 @@
+//game:
+
 var score = 0;
 var scoreAdd = 1;
 var highScore = 0;
@@ -29,7 +31,7 @@ function update(slot) {
     var message = game(slot);
     messageFeild.textContent = message;
     scoreFeild.textContent = "current Score: " + score;
-    highScoreFeild.textContent = "Highest Score: " + highScore;
+    highScoreFeild.textContent = highScore;
 }
 
 const o1 = document.querySelector('.option1');
@@ -56,4 +58,28 @@ o5.addEventListener('click' , function(){
 });
 o6.addEventListener('click' , function(){
     update(6);
+});
+
+//theme:
+
+// var theme = document.querySelector(':root');
+
+const theme = document.querySelector('link');
+
+function dark() {
+    theme.href = "dark.css";
+}
+
+function light() {
+    theme.href = "style.css";
+}
+
+const darkTheme = document.querySelector('.dark');
+const lightTheme = document.querySelector('.light');
+
+darkTheme.addEventListener('click' , function(){
+    dark();
+});
+lightTheme.addEventListener('click' , function(){
+    light();
 });
