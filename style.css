@@ -1,0 +1,28 @@
+*{
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    text-align: center;
+}
+
+.options{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.option{
+    text-align: center;
+    width: 6rem;
+    height: 3rem;
+    line-height: 3rem;
+    background-color: gray;
+    margin: 0.5rem;
+}
+
+.option:hover{
+    background-color: rgb(75, 75, 75);
+    cursor: pointer;
+}
